@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Summary</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <div>
+            <div class="row">
+              <div class="col col-6 title-card">
+                <a href="home-page.html">Latitude</a>
+              </div>
+              <div class="col col-6  buttons-card">
+                <nav class="navbar navbar-expand-md navbar-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="visualisations_temperature.html">Max Temperature</a>
+                          <a class="dropdown-item" href="visualisations_humidity.html">Humidity</a>
+                          <a class="dropdown-item" href="visualisations_cloudiness.html">Cloudiness</a>
+                          <a class="dropdown-item" href="visualisations_wind_speed.html">Wind Speed</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <br><br>
+        <!--CONTENT-->
+        <div class="container ">
+            <div class="row">
+                <!--Left-->
+                <div class="col col-12 col-md-8 leftbody">
+                    <h1>Latitude Comparisons</h1>
+                    <br>
+                    <img src="WebVisualisations/assets/Latitude_V_Temp.png" alt="Latitude vs. Temperature" width="300" align="left">
+                    <p>The purpose of this project was to analyze how weather changes as you get closter to the equator. to Accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                    <p>After Assempling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: Temperature, Cloudiness, Wind speed, and Humidity. The site provides the source data and visualisations created as part of the analysis, as well as explinations and descriptions of any trends and correlations witnessed</p>
+                </div>
+                <!--Right-->
+                <div class="col col-12 col-md-4 rightbody">
+                    <h2>Visualisations</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col col-3 col-md-6">
+                            <a href="visualisations_temperature.html"><img src="WebVisualisations/assets/Latitude_V_Temp.png" alt="Latitude vs. Temperature"></a>
+                        </div>
+                        <div class="col col-3 col-md-6">
+                            <a href="visualisations_humidity.html"><img src="WebVisualisations/assets/Latitude_V_Humidity.png" alt="Latitude vs. Humidity"></a>
+                        </div>
+                        <div class="col col-3 col-md-6">
+                            <a href="visualisations_cloudiness.html"><img src="WebVisualisations/assets/Latitude_V_Cloudiness.png" alt="Latitude vs. Cloudiness"></a>
+                        </div>
+                        <div class="col col-3 col-md-6">
+                            <a href="visualisations_wind_speed.html"><img src="WebVisualisations/assets/Latitude_V_Wind_Speed.png" alt="Latitude vs. Wind Speed" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bottom">
+            Alejandro M Waring
+        </div>         
+    </body>
+</html>
